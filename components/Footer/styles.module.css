@@ -1,0 +1,32 @@
+.footer ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer ul li {
+  font-size: 1rem;
+}
+
+.github a {
+  transition: color 0.2s ease-in-out;
+}
+
+.github a:hover {
+  color: #333;
+}
+
+.linkedin a {
+  transition: color 0.2s ease-in-out;
+}
+
+.linkedin a:hover {
+  color: #0a66c2;
+}
+
+.twitter a {
+  transition: color 0.2s ease-in-out;
+}
+
+.twitter a:hover {
+  color: #1da1f2;
+}

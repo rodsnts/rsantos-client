@@ -1,0 +1,91 @@
+.article {
+  margin-top: 2rem;
+  min-height: 100%;
+  width: inherit;
+  overflow-wrap: break-word;
+}
+
+.article h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-transform: none;
+  font-size: 1.5em;
+  line-height: 1.25;
+}
+
+.article h2 {
+  position: relative;
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+  padding-left: 0.5rem;
+  color: #eee;
+  text-transform: none;
+  letter-spacing: normal;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.article h2::before {
+  position: absolute;
+  top: -4px;
+  left: -1rem;
+  color: #2bbc8a;
+  content: "#";
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.article p {
+  padding: 0.5rem;
+  hyphens: auto;
+}
+
+.article p a {
+  position: relative;
+  border-bottom: 1px solid #c9cacc;
+}
+
+.article p a::before {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  width: 0%;
+  height: 2px;
+  background-color: #2bbc8a;
+  transition: width 0.2s ease-in-out;
+}
+
+.article p a:hover::before {
+  width: 100%;
+}
+
+.article blockquote {
+  margin: 0;
+  
+  padding: 0.5rem;
+  font-style: italic;
+  border-left: 0.25rem solid #2bbc8a;
+  background-color: #212326;
+}
+
+.article pre {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 0.875em;
+  line-height: 1.5;
+  overflow: auto;
+  word-wrap: normal;
+  background-color: #212326;
+  border-radius: 3px;
+  padding: 1rem;
+}
+
+.article pre code {
+  font-size: inherit;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}

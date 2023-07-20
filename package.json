@@ -9,14 +9,23 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@apollo/client": "^3.8.0-rc.1",
+    "@apollo/experimental-nextjs-app-support": "^0.0.0-commit-7dad495",
+    "@ckeditor/ckeditor5-build-classic": "^38.1.1",
+    "@ckeditor/ckeditor5-react": "^6.1.0",
     "@types/node": "20.4.2",
     "@types/react": "18.2.15",
     "@types/react-dom": "18.2.7",
+    "editorjs-blocks-react-renderer": "^1.3.0",
     "eslint": "8.45.0",
     "eslint-config-next": "13.4.10",
     "next": "13.4.10",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-icons": "^4.10.1",
+    "react-markdown": "^8.0.7",
+    "rehype-raw": "^6.1.1",
+    "remark-gfm": "^3.0.1",
     "typescript": "5.1.6"
   }
 }

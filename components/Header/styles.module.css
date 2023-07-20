@@ -1,0 +1,15 @@
+.header {
+  margin: 0 auto 2rem;
+  width: 100%;
+}
+
+.header h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #c9cacc;
+  letter-spacing: 0.01em;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
