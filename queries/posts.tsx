@@ -30,6 +30,7 @@ export const getPostBySlug = gql`
             data {
               attributes {
                 url
+                blurhash
               }
             }
           }

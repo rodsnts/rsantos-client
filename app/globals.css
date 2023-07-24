@@ -1,3 +1,10 @@
+:root {
+  --main-color: #2bbc8a;
+  --main-dark-color: #000;
+  --main-light-color: #c9cacc;
+  --main-gray-color: #666;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -17,8 +24,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #1D1F21;
-  color: #c9cacc;
+  background-color: var(--main-dark-color);
+  color: var(--main-light-color);
 }
 
 footer {
@@ -27,7 +34,7 @@ footer {
   align-items: center;
   margin: 32px 0;
   width: 100%;
-  color: #666;
+  color: var(--main-gray-color);
   vertical-align: top;
   text-align: center;
   font-size: 11px;
@@ -39,7 +46,7 @@ ul {
 
 h1 {
   display: block;
-  color: #2bbc8a;
+  color: var(--main-color);
   letter-spacing: 0.01em;
   font-size: 21px;
   font-weight: 700;
@@ -48,7 +55,7 @@ h1 {
 
 a {
   position: relative;
-  color: #c9cacc;
+  color: var(--main-light-color);
   font-weight: 400;
   text-decoration: none;
 }
@@ -56,7 +63,7 @@ a {
 a h3 {
   font-weight: 400;
   display: inline-block;
-  border-bottom: 1px solid #c9cacc;
+  border-bottom: 1px solid var(--main-light-color);
 }
 
 a h3::before {
@@ -65,7 +72,7 @@ a h3::before {
   bottom: 0px;
   width: 0%;
   height: 2px;
-  background-color: #2bbc8a;
+  background-color: var(--main-color);
   transition: width 0.3s ease-in-out;
 }
 
@@ -74,11 +81,11 @@ a h3:hover::before {
 }
 
 strong {
-  color: #2bbc8a;
+  color: var(--main-color);
 }
 
 time {
-  color: #666;
+  color: var(--main-gray-color);
 }
 
 ::-webkit-scrollbar {
@@ -95,10 +102,10 @@ time {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #2bbc8a;
+  background: var(--main-color);
 }
 
 ::selection {
   color: #fff;
-  background-color: #2bbc8a;
+  background-color: var(--main-color);
 }

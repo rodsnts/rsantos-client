@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
 
+import ReactMarkdown from "react-markdown";
 import Image from "next/image";
 
-import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
 
@@ -20,6 +20,7 @@ type ArticleProps = {
         data: {
           attributes: {
             url: string;
+            blurhash: string;
           };
         };
       };
