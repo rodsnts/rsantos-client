@@ -1,8 +1,8 @@
-"use client";
-import React from "react";
-import Link from "next/link";
+'use client'
+import React from 'react'
+import Link from 'next/link'
 
-import styles from "./styles.module.css";
+import styles from './styles.module.css'
 
 const Header = () => {
   return (
@@ -13,7 +13,7 @@ const Header = () => {
         </div>
       </Link>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

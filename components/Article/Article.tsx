@@ -1,13 +1,13 @@
-"use client";
-import React from "react";
+'use client'
+import React from 'react'
 
-import ReactMarkdown from "react-markdown";
-import Image from "next/image";
+import ReactMarkdown from 'react-markdown'
+import Image from 'next/image'
 
-import remarkGfm from "remark-gfm";
-import rehypeRaw from "rehype-raw";
+import remarkGfm from 'remark-gfm'
+import rehypeRaw from 'rehype-raw'
 
-import styles from "./styles.module.css";
+import styles from './styles.module.css'
 
 type ArticleProps = {
   data: {
@@ -31,7 +31,7 @@ type ArticleProps = {
 };
 
 const Article = ({ data }: ArticleProps) => {
-  const { Title, Date, Body } = data[0].attributes;
+  const { Title, Date, Body } = data[0].attributes
 
   return (
     <>
@@ -39,11 +39,11 @@ const Article = ({ data }: ArticleProps) => {
         <h1>{Title}</h1>
         <div
           style={{
-            display: "flex",
-            flexDirection: "row",
-            alignItems: "center",
-            gap: "1rem",
-            marginBottom: "1rem",
+            display: 'flex',
+            flexDirection: 'row',
+            alignItems: 'center',
+            gap: '1rem',
+            marginBottom: '1rem',
           }}
         >
           <p>Rodrigo Santos</p>
@@ -57,16 +57,16 @@ const Article = ({ data }: ArticleProps) => {
           components={{
             img: (props) => {
               const loaderProp = ({ src }: { src: string }) => {
-                return `${process.env.NEXT_PUBLIC_API_URL}${src}`;
-              };
+                return `${process.env.NEXT_PUBLIC_API_URL}${src}`
+              }
 
               return (
                 <Image
                   src={props.src as string}
                   style={{
-                    height: "auto",
-                    width: "100%",
-                    borderRadius: "0.5rem",
+                    height: 'auto',
+                    width: '100%',
+                    borderRadius: '0.5rem',
                   }}
                   width={0}
                   height={0}
@@ -75,7 +75,7 @@ const Article = ({ data }: ArticleProps) => {
                   loader={loaderProp}
                   alt={props.alt as string}
                 />
-              );
+              )
             },
           }}
         >
@@ -83,7 +83,7 @@ const Article = ({ data }: ArticleProps) => {
         </ReactMarkdown>
       </article>
     </>
-  );
-};
+  )
+}
 
-export default Article;
+export default Article

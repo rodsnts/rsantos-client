@@ -1,10 +1,10 @@
-"use client";
-import React from "react";
-import Link from "next/link";
+'use client'
+import React from 'react'
+import Link from 'next/link'
 
-import { AiFillGithub, AiFillLinkedin, AiOutlineTwitter } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin, AiOutlineTwitter } from 'react-icons/ai'
 
-import styles from "./styles.module.css";
+import styles from './styles.module.css'
 
 const Footer = () => {
   return (
@@ -33,7 +33,7 @@ const Footer = () => {
         </ul>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

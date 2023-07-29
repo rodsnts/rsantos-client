@@ -1,4 +1,4 @@
-import { gql } from "@apollo/client";
+import { gql } from '@apollo/client'
 
 export const postsQuery = gql`
   query {
@@ -15,7 +15,7 @@ export const postsQuery = gql`
       }
     }
   }
-`;
+`
 
 export const getPostBySlug = gql`
   query getPostBySlug($slug: String!) {
@@ -41,4 +41,4 @@ export const getPostBySlug = gql`
       }
     }
   }
-`;
+`
